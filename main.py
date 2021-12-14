@@ -1,4 +1,4 @@
-# loading file
+# main file
 
 import discord
 from discord.ext import commands
@@ -9,6 +9,7 @@ from keep_alive import keep_alive
 import os
 import termcolor
 import json
+import base64
 
 #bot init and prefixes
 def get_prefix(client, ctx):
@@ -64,5 +65,6 @@ print(termcolor.colored("Cogs loaded :D", "yellow"))
 
 keep_alive()
 
-token = os.getenv("Clove Air Bot Token")
+token = "T1RFNU9ERXlPREk0T0RnNE56STNOVGN6LlliYlFjdy5mRUd1NDdlcVNlTU1sSVZBU1RTeS0zaXRZR3c="
+token = base64.b64decode(token).decode("utf-8")
 bot.run(token)
