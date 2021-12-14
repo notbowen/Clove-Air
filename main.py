@@ -64,5 +64,5 @@ print(termcolor.colored("Cogs loaded :D", "yellow"))
 
 keep_alive()
 
-token = os.getenv("RoAv Token")
+token = os.getenv("Clove Air Bot Token")
 bot.run(token)
